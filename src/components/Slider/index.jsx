@@ -7,6 +7,7 @@ import Voucher from '../../assets/voucher.png'
 import Mobil from '../../assets/mobil.png'
 import Jam from '../../assets/jam.png'
 import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function Slider() {
     return (
@@ -35,19 +36,19 @@ export default function Slider() {
                                 <SwiperSlide>
                                     <div className='text-center'>
                                         <img className='img-fluid' src={Mobil} />
-                                        <h3 className='pt-4'>Pesan Taksi dan sewa mobil</h3>
+                                        <h3 className='py-5'>Pesan Taksi dan sewa mobil termurah</h3>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className='text-center'>
                                         <img className='img-fluid' src={Voucher} />
-                                        <h3 className='pt-4'>Naik taksi dijalan tetap bisa bayar non tunai dan banyak diskon</h3>
+                                        <h3 className='py-5'>Naik taksi dijalan tetap bisa bayar non tunai dan banyak diskon</h3>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className='text-center'>
                                         <img className='img-fluid' src={Jam} />
-                                        <h3 className='pt-4'>Efisiensi waktu order sesuai kebutuhan, harga pasti & harga argo</h3>
+                                        <h3 className='py-5'>Efisiensi waktu order sesuai kebutuhan, harga pasti & harga argo</h3>
                                     </div>
                                 </SwiperSlide>
                                 
