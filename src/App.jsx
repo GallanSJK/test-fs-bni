@@ -1,3 +1,4 @@
+import { Header, Slider, Footer} from './components'
 import './App.css'
 
 function App() {
@@ -5,7 +6,9 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>Hallo Ini Test</h1>
+        <Header />
+        <Slider />
+        <Footer />
       </div>
     </>
   )

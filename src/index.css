@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 :root {
-  font-family: Helvetica;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Header .img-header {
+  width: 50px;
+}
+
+.Login .img-back {
+  width: 50px;
+  cursor: pointer;
+}
+
+.Login .img-login {
+  width: 150px;
+}
+
+.Slider img {
+  width: 400px;
 }
 
 @media (max-width: 991px) {
-  h1 {
-    text-align: center;
+  .Slider img {
+    width: 300px;
+  }
+
+  .Login .img-login {
+    width: 100px;
   }
 } 
