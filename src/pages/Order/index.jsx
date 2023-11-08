@@ -16,14 +16,14 @@ export default function Order() {
                 </Container>                
             </section>            
             <section className='Tabs'>
-                <Container>
+                <Container className='mb-5'>
                     <Tabs
                     defaultActiveKey="riwayat"
                     id="uncontrolled-tab-example"
-                    className="mb-3"
+                    className="mb-5"
                     >
                         <Tab eventKey="riwayat" title="Riwayat">
-                            <div className='text-center'>
+                            <div className='text-center py-5'>
                                 <Image className='img-fluid' src={Mobil} />
                                 <h1>Kamu belum pernah membuat order apapun</h1>
                                 <Link to='/home'>
