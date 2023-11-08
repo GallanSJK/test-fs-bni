@@ -30,16 +30,16 @@ export default function Login() {
                                 <Form className='pt-5'>
                                     <p>Masukkan No. Telepon</p>
                                     <Form.Group className="mb-3 form-floating">
-                                        <Form.Control type="number" id="floatingInput" placeholder="name@example.com" />
+                                        <Form.Control type="number" id="floatingInput" placeholder="name@example.com" required />
                                         <Form.Label htmlFor='floatingInput'>No. Telepon</Form.Label>
                                     </Form.Group>
                                     
                                     <p>Masukkan Password</p>
                                     <Form.Group className="mb-3 form-floating">
-                                        <Form.Control type="password" id="floatingPassword" placeholder="Password" />
+                                        <Form.Control type="password" id="floatingPassword" placeholder="Password" required />
                                         <Form.Label htmlFor='floatingPassword'>Password</Form.Label>
                                     </Form.Group>
-                                    <Link to='/'>
+                                    <Link to='/home'>
                                         <div className="py-3 d-grid gap-2 col-lg-6 col-sm-12 mx-auto">
                                             <Button className="btn btn-primary" type='submit'>Login</Button>
                                         </div>
