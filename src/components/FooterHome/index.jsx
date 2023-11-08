@@ -16,7 +16,7 @@ export default function FooterHome() {
                         </Link>
                     </ListGroup.Item>
                     <ListGroup.Item as="li">
-                        <Link to='/'>
+                        <Link to='/promo'>
                             <FontAwesomeIcon icon="fa-solid fa-percent" />
                             <span>Promo</span>
                         </Link>
