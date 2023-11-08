@@ -34,7 +34,7 @@ export default function Order() {
                             </div>
                         </Tab>
                         <Tab eventKey="aktif" title="Aktif">
-                            <div className='text-center'>
+                            <div className='text-center py-5'>
                                 <Image className='img-fluid' src={Mobil} />
                                 <h1>Kamu tidak memiliki order aktif. Yuk buat order baru!</h1>
                                 <Link to='/home'>
@@ -45,7 +45,7 @@ export default function Order() {
                             </div>
                         </Tab>
                         <Tab eventKey="terjadwal" title="Terjadwal">
-                            <div className='text-center'>
+                            <div className='text-center py-5'>
                                 <Image className='img-fluid' src={Mobil} />
                                 <h1>Kamu belum menjadwalkan order apapun.</h1>
                                 <Link to='/home'>
