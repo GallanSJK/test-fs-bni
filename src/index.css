@@ -24,6 +24,59 @@ body {
   width: 400px;
 }
 
+.FooterHome {
+  position: sticky;
+  background-color: rgb(173, 173, 173);
+  bottom: 0;
+  padding: 10px 0 5px;
+  z-index: 2;
+}
+
+.FooterHome ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  list-style: none;
+  padding-left: 0;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.FooterHome li {
+  flex: 1;
+  background-color: rgb(173, 173, 173);
+  border: 0;
+}
+
+.FooterHome ul li > a {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+}
+
+.FooterHome svg {
+  margin: 0 auto;
+  max-width: fit-content;
+  height: 25px;
+}
+
+.FooterHome span {
+  margin-top: 5px;
+}
+
+.Order {
+  height: 80px;
+  color: white;
+  background-color: blue;
+}
+
+.Order h1 {
+  padding-top: 30px;
+}
+
 @media (max-width: 991px) {
   .Slider img {
     width: 300px;

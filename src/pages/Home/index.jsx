@@ -4,6 +4,8 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FooterHome } from "../../components";
+
 import Tes from '../../assets/tes.png'
 import Dompet from '../../assets/dompet.png'
 import Mobil from '../../assets/mobil.png'
@@ -94,10 +96,9 @@ export default function Home() {
                             <h5>Shuttle</h5>
                         </Col>
                     </Row>
-                </Container>
-
-                
-            </section>                
+                </Container>  
+            </section>     
+            <FooterHome />           
         </>
     )
 }
