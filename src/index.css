@@ -24,6 +24,10 @@ body {
   width: 400px;
 }
 
+.Home .ezpay {
+  background-color: whitesmoke;
+}
+
 .FooterHome {
   position: sticky;
   background-color: rgb(173, 173, 173);
@@ -76,6 +80,13 @@ body {
 .Order h1 {
   padding-top: 30px;
 }
+
+.Rekomendasi {
+  color: white;
+  background-color: blue;
+}
+
+
 
 @media (max-width: 991px) {
   .Slider img {

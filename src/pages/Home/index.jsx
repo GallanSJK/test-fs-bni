@@ -2,10 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FooterHome } from "../../components";
-
+import { FooterHome, Rekomendasi } from "../../components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Tes from '../../assets/tes.png'
 import Dompet from '../../assets/dompet.png'
 import Mobil from '../../assets/mobil.png'
@@ -78,7 +79,7 @@ export default function Home() {
                 </Container>
 
                 <Container>
-                    <Row className='pt-3 text-center'>
+                    <Row className='py-4 text-center'>
                         <Col xs={3} lg={3}>
                             <Image className='img-fluid' src={Mobil} />
                             <h5>Ride</h5>
@@ -96,8 +97,61 @@ export default function Home() {
                             <h5>Shuttle</h5>
                         </Col>
                     </Row>
+                </Container> 
+
+                <Container>
+                    <Row className="justify-content-center py-4">
+                        <Col lg={12}>
+                        <div className="shadow p-3 ezpay rounded">
+                            <Row className="row-cols-lg-auto g-0">
+                                <Col xs={2} lg={2} className='d-flex align-items-center justify-content-center'>
+                                    <FontAwesomeIcon icon="fa-solid fa-car-rear" size="xl" />
+                                </Col>
+                                <Col xs={8} lg={8} className='px-1 d-flex flex-column justify-content-center'>
+                                    <p className='mb-0'>EZPay</p>
+                                    <p className='mb-0'>Tinggal naik bayar non-tunai</p>
+                                </Col>
+                                <Col xs={2} lg={2} className='d-flex align-items-center justify-content-center'>
+                                    <FontAwesomeIcon icon="fa-solid fa-arrow-right" size="xl" />
+                                </Col>
+                            </Row>
+                        </div>
+                        </Col>
+                    </Row>
+                </Container> 
+
+                <Container>
+                    <Row className="justify-content-center py-4">
+                        <Col lg={12}>
+                        <div className="shadow p-3 rounded">
+                            <Row className="row-cols-lg-auto g-0">
+                                <Col xs={2} lg={2} className='d-flex align-items-center justify-content-center'>
+                                    <FontAwesomeIcon icon="fa-solid fa-coins" size='xl' />
+                                </Col>
+                                <Col xs={2} lg={2} className='px-1 d-flex flex-column justify-content-center'>
+                                    <p className='mb-0'>500</p>
+                                    <p className='mb-0'>EZCoin</p>
+                                </Col>
+                                <Col xs={2} lg={2} className='d-flex align-items-center justify-content-center'>
+                                    <FontAwesomeIcon icon="fa-solid fa-medal" size="xl" />
+                                </Col>
+                                <Col xs={4} lg={4} className='px-1 d-flex flex-column justify-content-center'>
+                                    <p className='mb-0'>Explorer</p>
+                                    <ProgressBar now={20} className='my-2'/>
+                                    <p className='mb-0'>1.000 EZCoin lagi naik level</p>
+                                </Col>
+                                <Col xs={2} lg={2} className='d-flex align-items-center justify-content-center'>
+                                    <FontAwesomeIcon icon="fa-solid fa-arrow-right" size="xl" />
+                                </Col>
+                            </Row>
+                        </div>
+                        </Col>
+                    </Row>
                 </Container>  
-            </section>     
+            </section>   
+
+            <Rekomendasi /> 
+            
             <FooterHome />           
         </>
     )
