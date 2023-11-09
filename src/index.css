@@ -86,7 +86,9 @@ body {
   background-color: blue;
 }
 
-
+.Logout {
+  margin-top: 200px;
+}
 
 @media (max-width: 991px) {
   .Slider img {

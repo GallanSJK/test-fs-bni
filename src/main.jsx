@@ -5,6 +5,7 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 import Order from './pages/Order'
 import Promo from './pages/Promo'
+import Akun from './pages/Akun'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import { Provider } from 'react-redux'
 // import store from './app/store'
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/home' element={<Home />} />
         <Route path='/order' element={<Order />} />
         <Route path='/promo' element={<Promo />} />
+        <Route path='/akun' element={<Akun />} />
       </Routes>
     </BrowserRouter>
     {/* </Provider> */}

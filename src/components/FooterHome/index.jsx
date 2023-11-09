@@ -28,7 +28,7 @@ export default function FooterHome() {
                         </Link>
                     </ListGroup.Item>
                     <ListGroup.Item as="li">
-                        <Link to='/'>
+                        <Link to='/akun'>
                             <FontAwesomeIcon icon="fa-solid fa-user" />
                             <span>Akun</span>
                         </Link>
